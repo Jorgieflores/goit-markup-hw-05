@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goit-Homewok#04</title>
+    <title>Goit-Homewok#05</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -48,7 +48,7 @@
         <section class="hero container">
             <div class="background-image">
                 <h1 class="hero-title">Effective Solution <br/> For Your Business</h1>
-                <button class="hero-button button" type="button "><span></span>Order Service</button>
+                <button class="hero-button button" type="button" data-modal-open><span></span>Order Service</button>
             </div>
        </section>
 
@@ -207,9 +207,9 @@
                 </li>
             </ul>
         </section>
-     </main>   
+    </main>   
 
-     <footer class="footer container">
+    <footer class="footer container">
         <div class="footer-content">
             <div class="footer-logo">
                 <div class="footer-webstudio">
@@ -235,6 +235,17 @@
                 </ul>
             </div>
         </div>
-    
+    </footer>
+
+    <!-- MODAL SECTION  -->
+    <div class="modal is-hidden" data-modal>
+        <div class="modal-content">
+            <div class="close-modal-button">
+                <img src="./svgimages/modalsicon/close.svg" class="close-button" alt="close-modal-icon" data-modal-close/>
+            </div>
+        </div>
+    </div>
+    <script src="./modal.js"></script>
+
 </body>
 </html>

@@ -20,7 +20,6 @@ body {
 .container {
     max-width: 1158px;
     margin: auto;
-    position: relative;
 }
 .list {
     list-style: none;
@@ -253,9 +252,6 @@ h1 {
     font-size: 15px;
     padding: 8px 0px;
 }
-.name {
-    /* margin: 4px; */
-}
 
 .social-media-icons {
     display: flex;
@@ -331,5 +327,37 @@ section h2 {
     color: var(--CLOUD);
 }
 
-
 /* END OF FOOTER SECTION 
+
+/* MODAL CONTENT SECTION */
+
+.modal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: rgba(61, 61, 87, 0.4);
+    width: 100%;
+    height: 370%;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-content {
+    width: 408px;
+    height: 584px;
+    flex-shrink: 0;
+    background-color: white;
+    margin-top: 80px;
+    position: fixed;
+}
+
+.close-button {
+    position: absolute;
+    top: 24px;
+    left: 360px;
+    cursor: pointer;
+}  
+
+.is-hidden {
+    display: none;
+}
